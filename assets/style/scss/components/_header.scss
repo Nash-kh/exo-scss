@@ -1,0 +1,52 @@
+@use "../global/variables" as *;
+@use "../global/normalize" as *;
+@use "../global/mixins" as*;
+
+
+#main_header {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $light;
+    box-shadow: 2px 5px 8px rgba( 0,0,0, .18 );
+    padding: 2rem;
+
+    & > a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        img {
+            margin-right: 1rem;
+        }
+    }
+
+    #burger {
+        display: none;
+    }
+
+    #burger + nav {
+        background-color: $light;
+    }
+
+    #burger:not(:checked) + nav {
+        display: none;
+    }
+
+    #burger:checked + nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 7.6rem;
+        right: 0;
+        width: fit-content;
+        padding: 2rem;
+        box-shadow: 2px 5px 8px rgba( 0,0,0, .18 );
+
+        & > a {
+            width: 100%;
+        }
+    }
+}

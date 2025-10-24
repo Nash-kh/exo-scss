@@ -1,0 +1,80 @@
+@use "../global/variables" as *;
+@use "../global/normalize" as*;
+@use "../global/mixins" as*;
+
+.film h2 {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+}
+
+.film article {
+    margin: 1rem;
+}
+
+.hommes {
+        
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    background: url(/assets/image/12_homme.jpg) center/cover no-repeat;
+    height: 30rem;
+    padding: 0;
+
+    h3 {
+        width: 100%;
+        color: $light;
+        text-align: center;
+        margin: 0;
+        padding: 2rem 0;
+    }
+}
+
+.evades {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    background: url(/assets/image/evade.webp) center/cover no-repeat;
+    height: 30rem;
+    padding: 0;
+
+    h3 {
+         width: 100%;
+        color: $light;
+        text-align: center;
+        margin: 0;
+        padding: 2rem 0;
+    }
+}
+
+.gump {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    background: url(/assets/image/forrest-gump.jpg) center/cover no-repeat;
+    height: 30rem;
+    padding: 0;
+
+        h3 {
+            width: 100%;
+            color: $light;
+            text-align: center;
+            margin: 0;
+            padding: 2rem 0;
+        }
+}
+
+.film a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: $light;
+    background-color: $dark;
+    border: solid $dark;
+    width: 20rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    margin: 2rem auto;
+}

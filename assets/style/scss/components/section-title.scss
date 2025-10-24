@@ -1,0 +1,9 @@
+@use "../global/variables" as *;
+@use "../global/normalize" as*;
+@use "../global/mixins" as*;
+
+.titleh1 {
+    background: url(/assets/image/lightnightsunlightlineredcolor748105pxherecomjpg_5ee1121a106a6.jpg) cover;
+    height: 100%;
+    width: 100%;
+}
