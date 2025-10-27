@@ -7,6 +7,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 html:is(html), body:is(html) {
   font-size: 62.5%;
@@ -319,10 +320,42 @@ html:is(body), body:is(body) {
   margin: 2rem auto;
 }
 
-.titleh1 {
-  background: url(/assets/image/lightnightsunlightlineredcolor748105pxherecomjpg_5ee1121a106a6.jpg) cover;
-  height: 100%;
-  width: 100%;
+.title_h1 {
+  background-image: url("/assets/image/rideau.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 80rem;
+}
+
+h1 {
+  font-size: 25rem;
+  margin: 0;
+  font-weight: 700;
+  color: transparent;
+  background: url(/assets/image/popcorn.jpg);
+  background-clip: text;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h2 {
+  font-size: 7rem;
+  margin: 0;
+}
+
+h2, .ph-arrow-circle-down {
+  color: #fefefe;
+}
+
+.arrow {
+  font-size: 12rem;
+  margin-top: 2rem;
+  color: #fefefe;
 }
 
 /*# sourceMappingURL=app.css.map */
