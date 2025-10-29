@@ -8,14 +8,14 @@
 
     @for $i from 1 through 12 {
         .col-#{$i} {
-            width: calc($i * 100% / 12);
+            width: calc($i * 100% / 12 - 1rem);
         }
     }
 
     @for $i from 1 through 12 {
         @include tablet {
             .col-tablet-#{$i} {
-                width: calc($i * 100% / 12);
+                width: calc($i * 100% / 12 - 1rem);
             }
         }
     }
@@ -23,7 +23,7 @@
     @for $i from 1 through 12 {
         @include desktop {
             .col-desktop-#{$i} {
-                width: calc($i * 100% / 12);
+                width: calc($i * 100% / 12 - 1rem) ;
             }
         }
     }

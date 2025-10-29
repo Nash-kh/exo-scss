@@ -2,12 +2,13 @@
     box-sizing: border-box;
     text-decoration: none;
     color: black;
+    font-family: "Roboto", sans-serif;
 }
 
 html, body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    // font-family: sans-serif;
 
     &:is( html ) {
         font-size: 62.5%;

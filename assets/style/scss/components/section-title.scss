@@ -1,42 +1,74 @@
 @use "../global/variables" as *;
-@use "../global/normalize" as*;
+// @use "../global/normalize" as*;
 @use "../global/mixins" as*;
 
-.title_h1 {
-    background-image: url("/assets/image/rideau.jpg");
-    // background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+#call-to-action {
     display: flex;
-    flex-direction: column;
-    text-align: center;
     justify-content: center;
-    height: 100rem;
-}
+    align-items: center;
 
-h1 {
-    font-size: 25rem;
-    margin: 0;
-    font-weight: 700;
-    color: transparent;
-    background: url(/assets/image/popcorn.jpg);
-    background-clip: text;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+    height: calc(100vh - 7.2rem);
+    
 
-h2 {
-    font-size: 7rem;
-    margin: 0;
-}
+    background-image: url("/assets/image/rideau.jpg");
 
-h2, .ph-arrow-circle-down {
-    color: $light;
-}
+    @include fullCenterBgImage;
 
-.arrow {
-    font-size: 12rem;
-    margin-top: 2rem;
-    color: $light;
+article {
+
+        text-align: center;
+        color: $light;
+
+        h1 {
+            margin: 2rem;
+            font-size: 6rem;
+            font-weight: bolder;
+            background: url('/assets/image/popcorn.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: transparent;                 
+            -webkit-background-clip: text;  
+            background-clip: text;
+
+            @include tablet {
+                font-size: 16rem;
+            }
+
+            @include desktop {
+                font-size: 20rem;
+            }
+        }
+
+        h2 {
+            margin: 2rem;
+            font-size: 4rem;
+            color: $light;
+
+            @include tablet {
+                font-size: 5rem;
+            }
+
+            @include desktop {
+                font-size: 7rem;
+            }
+
+        }
+
+        a {
+            color: $light;
+            font-size: 10rem;
+            text-decoration: none;
+        }
+
+        .ph-arrow-circle-down {
+            color: $light;
+        }
+
+        .arrow {
+            font-size: 10rem;
+            // margin-top: 2rem;
+            // color: $light;
+        }
+    }
 }

@@ -1,5 +1,5 @@
 @use "../global/variables" as *;
-@use "../global/normalize" as*;
+// @use "../global/normalize" as*;
 @use "../global/mixins" as*;
 
 .film h2 {
@@ -10,7 +10,7 @@
 }
 
 .film article {
-    margin: 1rem;
+    margin: 0.5rem;
 }
 
 .hommes {
